@@ -6,4 +6,5 @@ import (
 
 type App struct {
 	Logger *logging.Logger
+	Config Config
 }

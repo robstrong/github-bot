@@ -1,8 +1,10 @@
 package main
 
 type Config struct {
-	HookAddress string            `json:"hook-address"`
-	Repos       map[string]Events `json:"repos"`
+	HookAddress  string            `json:"hook-address"`
+	RepoDataPath string            `json:"repo-data-path"`
+	GitHubToken  string            `json:"github-token"`
+	Repos        map[string]Events `json:"repos"`
 }
 
 type Events []Event
